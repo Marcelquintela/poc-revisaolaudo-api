@@ -1,0 +1,19 @@
+# Gerar chave API e salvar em .env
+
+Este repositório contém um notebook e um script que geram uma chave aleatória segura
+para uso como `API_KEY_REVISAO_LAUDO` e salvam essa chave em um arquivo `.env` na raiz do projeto.
+
+## Arquivos
+
+- `gerar_chave_api.ipynb` (opcional): Notebook Jupyter com células que geram a chave e escrevem `.env`.
+- `gerar_chave_api.py` (alternativa): script Python simples que faz a mesma coisa (útil se você não usar Jupyter).
+
+## Como usar (notebook)
+
+1. Abra o Jupyter / VSCode (Jupyter) na raiz do projeto.
+2. Crie um novo notebook e cole o conteúdo do bloco `gerar_chave_api.ipynb` (JSON) ou salve o arquivo `gerar_chave_api.ipynb`.
+3. Execute as células em ordem. O notebook gerará uma chave e criará um arquivo `.env` com a variável:
+
+API_KEY_REVISAO_LAUDO=<chave_gerada>
+
+4. Teste que o `.env` foi criado abrindo o arquivo ou rodando `cat .env` (Linux/macOS) / `type .env` (Windows).
