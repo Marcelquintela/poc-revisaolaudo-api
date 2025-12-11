@@ -197,15 +197,15 @@ async def create_review_request(
     api_key: str = Depends(get_api_key)
 ):
     """
-    Recebe uma lista de solicitações de revisão de laudos.
+    Recebe uma solicitação de revisão de laudo.
     - Validação de api_key via header x-api-key (Dependência get_api_key).
     """
     if not payload:
-        raise HTTPException(status_code=400, detail="A lista de solicitações não pode estar vazia.")
+        raise HTTPException(status_code=400, detail="A solicitação não pode estar vazia.")
 
     # Aqui a lógica de persistência ou envio para fila seria aplicada.
     return ReviewResponse(
         status="ACK",
-        message="Solicitação(ões) recebida(s) com sucesso.",
-        receivedItems=len(payload)
+        message="Solicitação recebida com sucesso.",
+        receivedItems=1
     )
