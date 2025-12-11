@@ -17,3 +17,23 @@ para uso como `API_KEY_REVISAO_LAUDO` e salvam essa chave em um arquivo `.env` n
 API_KEY_REVISAO_LAUDO=<chave_gerada>
 
 4. Teste que o `.env` foi criado abrindo o arquivo ou rodando `cat .env` (Linux/macOS) / `type .env` (Windows).
+
+
+# Para Testes
+1 - Iniciar o servidor local
+Execute:
+uvicorn main:app --reload
+
+A API ficará disponível em: http://127.0.0.1:8000
+Documentação Swagger:http://127.0.0.1:8000/docs
+
+2 - Arquivo de payload (payload.json) pode ser editato para testes
+
+3 - Executar o teste via script Bash
+    O projeto inclui o script testar_revisao.sh, responsável por:
+
+carregar automaticamente a chave de API do .env,
+
+no bash:
+Tornar o script executável: chmod +x testar_revisao.sh
+Executar o teste: ./testar_revisao.sh
