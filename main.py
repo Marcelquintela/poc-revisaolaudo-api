@@ -192,7 +192,8 @@ async def health_check():
     summary="Registrar solicitação de revisão de laudo"
 )
 async def create_review_request(
-    payload: List[ReviewRequest],
+    # payload: List[ReviewRequest], # era lista passou a ser unico objeto
+    payload: ReviewRequest,
     api_key: str = Depends(get_api_key)
 ):
     """
