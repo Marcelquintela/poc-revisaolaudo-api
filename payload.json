@@ -1,27 +1,27 @@
-{
-  "accessionNumber": "123456789",
-  "requestingPhysician": {
-    "name": "Dra. Maria de Souza",
-    "councilCode": "CRM",
-    "professionalRegistrationNumber": "4292",
-    "councilStateCode": "CE",
-    "phone": "85999999999",
-    "email": "maria.souza@hospital.com",
-    "cpf": "12345678900"
-  },
-  "freeAssignmentFlag": false,
-  "assignedProfessional": {
-    "professionalCode": "001234",
-    "professionalName": "Dr. Responsável Atual"
-  },
-  "reviewJustification": "Solicitação de revisão por inconsistência.",
-  "reviewReasons": {
-    "lateralityError": false,
-    "orthographicError": true,
-    "diagnosticDivergence": false,
-    "wrongExamTopography": false,
-    "measurementDivergence": true,
-    "other": false,
-    "otherDescription": null
+  {
+    "accessionNumber": "123456789",
+    "requestingPhysician": {
+      "name": "Dra. Maria de Souza",
+      "councilCode": "CRM",
+      "professionalRegistrationNumber": "4292",
+      "councilStateCode": "CE",
+      "phone": "85999999999",
+      "email": "maria.souza@hospital.com",
+      "cpf": "12345678900"
+    },
+    "freeAssignmentFlag": false,
+    "assignedProfessional": {
+      "professionalCode": "001234",
+      "professionalName": "Dr. Responsável Atual"
+    },
+    "reviewJustification": "Solicitação de revisão por inconsistência.",
+    "reviewReasons": {
+      "lateralityError": false,
+      "orthographicError": true,
+      "diagnosticDivergence": false,
+      "wrongExamTopography": false,
+      "measurementDivergence": true,
+      "other": false,
+      "otherDescription": null
+    }
   }
-}
