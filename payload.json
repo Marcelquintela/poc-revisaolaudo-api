@@ -9,18 +9,18 @@
       "email": "maria.souza@hospital.com",
       "cpf": "12345678900"
     },
-    "freeAssignmentFlag": false,
+    "freeAssignmentFlag": true,
     "assignedProfessional": {
       "professionalCode": "001234",
       "professionalName": "Dr. Responsável Atual"
     },
     "reviewJustification": "Solicitação de revisão por inconsistência.",
     "reviewReasons": {
-      "lateralityError": false,
-      "orthographicError": true,
+      "lateralityError": true,
+      "orthographicError": false,
       "diagnosticDivergence": false,
       "wrongExamTopography": false,
-      "measurementDivergence": true,
+      "measurementDivergence": false,
       "other": false,
       "otherDescription": null
     }
